@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class LoadSceneOnClick : MonoBehaviour {
-
+public class LoadSceneOnClick : MonoBehaviour
+{
     public void LoadByIndex(int sceneIndex)
     {
-        SceneManager.LoadScene(sceneIndex);        
+        Settings.TTSM.Speak("It's Show Time");
+        SceneManager.LoadScene(sceneIndex);
     }
 }
